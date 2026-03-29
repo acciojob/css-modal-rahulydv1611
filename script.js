@@ -12,9 +12,10 @@ closeBtn.addEventListener("click", () => {
   modal.style.display = "none";
 });
 
-// ✅ FIX: Click outside (modal background)
-modal.addEventListener("click", (e) => {
+// ✅ IMPORTANT FIX
+modal.onclick = function (e) {
+  // If clicked directly on modal (background)
   if (e.target === modal) {
     modal.style.display = "none";
   }
-});
+};
