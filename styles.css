@@ -29,7 +29,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  background-color: #f1f1f1;
+   background-color: green;   /* ✅ this makes header green */
+  color: white;
 }
 
 /* Close button */
